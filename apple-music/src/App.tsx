@@ -4,6 +4,7 @@ import AppleNavbar from './components/AppleNavbar';
 import { Container } from 'react-bootstrap';
 import Novità from './components/Novità';
 import NuoviEpisodiRadio from './components/NuoviEpisodiRadio';
+import NuoveUscite from './components/NuoveUscite';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <AppleNavbar/>
     <Novità/>
     <NuoviEpisodiRadio/>
+    <NuoveUscite/>
     </Container>
   )
 }
