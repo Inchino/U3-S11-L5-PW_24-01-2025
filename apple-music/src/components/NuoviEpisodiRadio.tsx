@@ -28,19 +28,19 @@ const NuoviEpisodiRadio = () => {
               title="Michael Bublé & Carly Pearce"
             />
           </Col>
-          <Col md="auto" lg="auto" className="d-none d-md-block">
+          <Col className="d-none d-md-block">
             <MusicFigure
               img="../assets/images/2d.png"
               title="Stephan Moccio: The Zane Lowe Interview"
             />
           </Col>
-          <Col lg="auto" className="d-none d-lg-block">
+          <Col className="d-none d-lg-block">
             <MusicFigure
               img="../assets/images/2e.png"
               title="Chart Spotlight: Julia Michaels"
             />
           </Col>
-          <Col xl="auto" className="d-none d-xl-block">
+          <Col className="d-none d-xl-block">
             <MusicFigure
               img="../assets/images/2f.png"
               title="Chart: Karri & Travis Mills"

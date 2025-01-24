@@ -14,14 +14,7 @@ const NuoveUscite = ({ tracks }: NewTracksProps) => {
       </h3>
       <br />
       <Row xs={3} md={4} lg={5} xl={6} className="g-4">
-        {tracks.slice(0, 3).map((track) => (
-          <Col key={track.id}>
-            <SingleTrack track={track} />
-          </Col>
-        ))}
-      </Row>
-      <Row xs={3} md={4} lg={5} xl={6} className="g-4">
-        {tracks.slice(6, 12).map((track) => (
+        {tracks.slice(0, 12).map((track) => (
           <Col key={track.id}>
             <SingleTrack track={track} />
           </Col>
@@ -32,4 +25,5 @@ const NuoveUscite = ({ tracks }: NewTracksProps) => {
 };
 
 export default NuoveUscite;
+
 
