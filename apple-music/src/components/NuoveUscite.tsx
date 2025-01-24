@@ -6,7 +6,7 @@ const NuoveUscite = ({ tracks }: NewTracksProps) => {
   return (
     <>
       <br />
-      <h3>
+      <h3 className="text-start">
         Nuove Uscite
         <span>
           <i className="bi bi-caret-right"></i>

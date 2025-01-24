@@ -5,7 +5,7 @@ const Novità = () => {
   return (
     <>
       <br />
-      <h3>Nuove Uscite</h3>
+      <h3>Novità</h3>
       <hr />
       <Row>
         <Col>
