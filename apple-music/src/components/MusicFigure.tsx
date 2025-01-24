@@ -1,8 +1,10 @@
 import Figure from 'react-bootstrap/Figure';
+import Container from 'react-bootstrap/Container';
 import MusicFigureProps from '../types/MusicFigureProps';
 
 function MusicFigure({ img, title }: MusicFigureProps) {
   return (
+    <Container>
     <Figure>
       <Figure.Image
         width={171}
@@ -10,10 +12,11 @@ function MusicFigure({ img, title }: MusicFigureProps) {
         alt="Immagine album"
         src={img}
       />
-      <Figure.Caption>
+      <Figure.Caption className="text-light text-wrap">
         <small>{title}</small>
       </Figure.Caption>
     </Figure>
+    </Container>
   );
 }
 

@@ -1,24 +1,33 @@
 import ListItem from "./ListItem";
+import { Row, Col } from "react-bootstrap";
 
 const Esplorare = () => {
-    return (
-      <>
-      <br/>
-        <h3>
-          Altro da Esplorare
-        </h3>
-        <br/>
-        <ListItem info="Esplora per genere"/>
-        <ListItem info="Decenni"/>
-        <ListItem info="Attività e stati d'animo"/>
-        <ListItem info="Worldwide"/>
-        <ListItem info="Classifiche"/>
-        <ListItem info="Audio spaziale"/>
-        <ListItem info="Video musicali"/>
-        <ListItem info="Nuovi Artisti"/>
-        <ListItem info="Hit del passato"/>
-      </>
-    );
-  };
-  
-  export default Esplorare;
+  const items = [
+    "Esplora per genere",
+    "Decenni",
+    "Attività e stati d'animo",
+    "Worldwide",
+    "Classifiche",
+    "Audio spaziale",
+    "Video musicali",
+    "Nuovi Artisti",
+    "Hit del passato",
+  ];
+
+  return (
+    <>
+      <br />
+      <h3>Altro da Esplorare</h3>
+      <br />
+      <Row xs={1} md={2} lg={3} className="g-4">
+        {items.map((item, index) => (
+          <Col key={index}>
+            <ListItem info={item} />
+          </Col>
+        ))}
+      </Row>
+    </>
+  );
+};
+
+export default Esplorare;
