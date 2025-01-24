@@ -7,6 +7,7 @@ import Novità from './components/Novità';
 import NuoviEpisodiRadio from './components/NuoviEpisodiRadio';
 import NuoveUscite from './components/NuoveUscite';
 import Esplorare from './components/Esplorare';
+import AppleFooter from './components/AppleFooter';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
     <NuoveUscite/>
     <Esplorare/>
     </Container>
+    <AppleFooter/>
     </>
   )
 }
