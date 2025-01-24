@@ -2,7 +2,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 
 const AppleNavbar = () => {
   return (
-    <Navbar expand="lg">
+    <Navbar expand="lg" bg="dark">
       <Container className="d-flex justify-content-between">
         <Nav>
           <i className="bi bi-list text-danger"></i>
