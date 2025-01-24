@@ -5,7 +5,7 @@ import AppleNavbar from './components/AppleNavbar';
 import { Container } from 'react-bootstrap';
 import Novità from './components/Novità';
 import NuoviEpisodiRadio from './components/NuoviEpisodiRadio';
-import NuoveUscite from './components/NuoveUscite';
+import AdminArea from './components/AdminArea';
 import Esplorare from './components/Esplorare';
 import AppleFooter from './components/AppleFooter';
 
@@ -16,7 +16,7 @@ function App() {
     <Container>
     <Novità/>
     <NuoviEpisodiRadio/>
-    <NuoveUscite/>
+    <AdminArea/>
     <Esplorare/>
     </Container>
     <AppleFooter/>

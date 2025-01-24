@@ -1,7 +1,8 @@
 import { Row, Col } from "react-bootstrap";
-import MusicFigure from "./MusicFigure";
+import SingleTrack from "./SingleTrack";
+import NewTracksProps from "../types/NewTracksProps";
 
-const NuoveUscite = () => {
+const NuoveUscite = ({tracks}: NewTracksProps) => {
   return (
     <>
     <br/>
@@ -13,36 +14,11 @@ const NuoveUscite = () => {
       </h3>
       <br/>
         <Row xs={3}>
-          <Col>
-            <MusicFigure
-              img="../assets/images/2a.png"
-              title="Prologo con Abuelo"
-            />
-          </Col>
-          <Col>
-            <MusicFigure img="../assets/images/2b.png" title="The Wanderer" />
-          </Col>
-          <Col>
-            <MusicFigure
-              img="../assets/images/2c.png"
-              title="Michael Bublé & Carly Pearce"
-            />
-          </Col>
-          <Col>
-            <MusicFigure
-              img="../assets/images/2a.png"
-              title="Prologo con Abuelo"
-            />
-          </Col>
-          <Col>
-            <MusicFigure img="../assets/images/2b.png" title="The Wanderer" />
-          </Col>
-          <Col>
-            <MusicFigure
-              img="../assets/images/2c.png"
-              title="Michael Bublé & Carly Pearce"
-            />
-          </Col>
+        {tracks.slice(0, 6).map((track) => (
+        <Col key={track.id}>
+          <SingleTrack track={track}/>
+        </Col>
+      ))}
         </Row>
     </>
   );
