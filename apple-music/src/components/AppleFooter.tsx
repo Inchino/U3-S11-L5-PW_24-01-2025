@@ -1,9 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
+import PlayerXs from "./PlayerXs";
 
 function AppleFooter() {
   return (
     <footer className="bg-dark text-light py-3">
-      <Container>
+      <Container className="mb-3">
         <Row className="mb-5">
           <Col className="d-flex">
             <span>Italia</span>
@@ -44,6 +45,7 @@ function AppleFooter() {
           </Col>
         </Row>
       </Container>
+      <PlayerXs/>
     </footer>
   );
 }
