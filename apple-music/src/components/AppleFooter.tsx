@@ -4,28 +4,23 @@ function AppleFooter() {
   return (
     <footer className="bg-dark text-light py-3">
       <Container>
-        {/* Prima riga: Sezione Lingue */}
-        <Row className="mb-2">
-          <Col className="d-flex justify-content-start">
+        <Row className="mb-5">
+          <Col className="d-flex">
             <span>Italia</span>
             <span className="mx-2">|</span>
             <span>English (UK)</span>
           </Col>
         </Row>
-
-        {/* Seconda riga: Copyright */}
-        <Row className="mb-2">
-          <Col className="text-center">
+        <Row className="mb-3">
+          <Col>
             <p className="mb-0">
               Copyright © 2024 Apple Inc. Tutti i diritti riservati.
             </p>
           </Col>
         </Row>
-
-        {/* Terza riga: Link */}
         <Row>
           <Col>
-            <div className="d-flex flex-wrap justify-content-center gap-2">
+            <div className="d-flex flex-wrap gap-2">
               <a href="#" className="text-light text-decoration-none">
                 Condizioni dei servizi internet
               </a>

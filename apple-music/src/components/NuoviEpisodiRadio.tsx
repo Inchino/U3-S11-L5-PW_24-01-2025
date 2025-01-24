@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import MusicFigure from "./MusicFigure";
 
 const NuoviEpisodiRadio = () => {
@@ -12,7 +12,6 @@ const NuoviEpisodiRadio = () => {
         </span>
       </h3>
       <br/>
-      <Container>
         <Row>
           <Col>
             <MusicFigure
@@ -30,7 +29,6 @@ const NuoviEpisodiRadio = () => {
             />
           </Col>
         </Row>
-      </Container>
     </>
   );
 };

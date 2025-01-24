@@ -1,40 +1,20 @@
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
+import MusicCards from "./MusicCard";
 
 const Novità = () => {
   return (
     <>
-      <h1>Novità</h1>
+      <br />
+      <h3>Nuove Uscite</h3>
       <hr />
-      <Container>
-        <Row>
-          <Col>
-            <Card>
-              <Card.Body>
-                <Card.Title>
-                  <h6>NUOVA STAZIONE RADIO</h6>
-                </Card.Title>
-                <Card.Text>
-                  Rilassati, al resto pensiamo noi. Ascolta Apple Music Chill
-                </Card.Text>
-              </Card.Body>
-              <Card.Img variant="bottom" src="..\assets\images\1a.png" />
-            </Card>
-          </Col>
-          <Col>
-            <Card>
-              <Card.Body>
-                <Card.Title>
-                  <h6>NUOVA STAZIONE RADIO</h6>
-                </Card.Title>
-                <Card.Text>
-                  Ecco la nuova casa della musica latina
-                </Card.Text>
-              </Card.Body>
-              <Card.Img variant="bottom" src="..\assets\images\1b.png" />
-            </Card>
-          </Col>
-        </Row>
-      </Container>
+      <Row>
+        <Col>
+          <MusicCards svg="../assets/images/1a.png" text="Rilassati, al resto pensiamo noi. Ascolta Apple Music Chill"/>
+        </Col>
+        <Col>
+          <MusicCards svg="../assets/images/1b.png" text="Ecco la nuova casa della musica latina"/>
+        </Col>
+      </Row>
     </>
   );
 };

@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import MusicFigure from "./MusicFigure";
 
 const NuoveUscite = () => {
@@ -12,7 +12,6 @@ const NuoveUscite = () => {
         </span>
       </h3>
       <br/>
-      <Container>
         <Row xs={3}>
           <Col>
             <MusicFigure
@@ -45,7 +44,6 @@ const NuoveUscite = () => {
             />
           </Col>
         </Row>
-      </Container>
     </>
   );
 };
